@@ -8,6 +8,7 @@ const router = require('./router');
 const mongoose = require('mongoose');
 
 // DB Setup
+mongoose.set('useCreateIndex', true)
 mongoose.connect('mongodb://localhost:auth/auth', { useNewUrlParser: true });
 
 // App Setup
